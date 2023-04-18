@@ -40,14 +40,6 @@ Customer Address            |    3,999                        |       3,999
 Transaction Data            |    20,000                       |       20,000
         
 
-                            |    Customer Demographics        |       Customer address         |   Transactions 
-:--------------------------:|:-------------------------------:|:-------------------------------:-------------------:
-Accuracy                    |    DOB column inaccurate        |                                |
-Completeness                |    Empty fields found in the following columns: last_name, DOB, Job_title and tenure|               |Empty fields found in the following columns:online_order, brand, product_line, product_class, product_size, standard_cost and product_first_sold_date
-Consistency                 |  Inconsistent gender column                      |      Inconsistent states column     |
-Currency                    |   Deceased customers be filtered out             |                                     |
-Relevancy                   |   default column should be removed               |                                     |
-Validity                    |                                                  |       Some columns not in their proper data type  |   Product_first_sold_date column not in the proper format
 
 ![](CustomerAddress_Unclean2.jpg)
 ![](Column_quality.jpg)
@@ -69,6 +61,7 @@ For key datasets, such as transactions, less than 1% of transactions have missin
 Inconsistent values for the same attribute
 (e.g Female being represented as “F”, “Femal” and ‘Female”)
 Mitigation: regular expression were used to replace extended values into abbreviations to ensure consistency.
+
 ![](ValueDistribution_gender.jpg)
 
 Inconsistent data type for the same attribute
